@@ -38,13 +38,13 @@ Data Split:
   Test set: 10%
 
 Models Used:
-  Linear Regression
-  Ridge Regression
-  Lasso Regression
-  Decision Tree
-  Random Forest
-  Extra Tree
-  Gradient Boosting
+  - Linear Regression
+  - Ridge Regression
+  - Lasso Regression
+  - Decision Tree
+  - Random Forest
+  - Extra Tree
+  - Gradient Boosting
 
 Prediction Model Performance:
 ![image](https://user-images.githubusercontent.com/106895118/175215749-190f8b6b-e074-4701-bdf0-624643b32b0d.png)
