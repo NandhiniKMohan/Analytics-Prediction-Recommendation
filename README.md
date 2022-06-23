@@ -1,5 +1,5 @@
 # Data-Science-Analytics
-# Price Prediction & Location Recommendation - Airbnb dataset
+## Price Prediction & Location Recommendation - Airbnb dataset
 Predicts the price of Airbnb property, and finds the best location to gain maximum profit - Airbnb
 
 Business Problem and Background:
@@ -17,7 +17,7 @@ Data:
 The main data that we will be using will be from the Kaggle database, we plan to use this data which has 38277 observations and 18 variables. 
 The dependent variable is price, which is a quantitative variable. In the predictor set, there are 10 qualitative variables and 8 quantitative variables, related to neighborhood, location, reviews, availability, and so on.
 
-# METHODOLOGY:
+## METHODOLOGY:
 Steps:
   Data Collection
   Data Cleaning
@@ -32,10 +32,56 @@ Tools:
   SciPy - Hypthesis Testing
   Matplotlib, Seaborn - Data Visualization
 
+Data Split:
+  Training set: 80%
+  Validation set: 10%
+  Test set: 10%
+
+Models Used:
+  Linear Regression
+  Ridge Regression
+  Lasso Regression
+  Decision Tree
+  Random Forest
+  Extra Tree
+  Gradient Boosting
+
+Prediction Model Performance:
+![image](https://user-images.githubusercontent.com/106895118/175215749-190f8b6b-e074-4701-bdf0-624643b32b0d.png)
+
+Prediction Result:
+Final Model - Gradient Boosting
+Test RSME - 396.905
+
+Hypotheses:
+1. There is an association between Neighbourhood & Accommodation Type
+2. Average Price differs with respect to Neighbourhood and type of accommodation
+3. Average Availability differs with respect to Neighbourhood and type of accommodation
+4. Average Price in Manhattan is greater than that of other Neighbourhoods
+
+Hypothesis Testing:
+1. Neighbourhood & Room Type: P_value = 1.0 (Null Hypothesis - Possible)
+2. Avg Price - Neighbourhood:  5.606e-118
+3. Avg Price in Manhattan > Neighbourhoods: 1.94369e-113 
+4. Avg Availability - Neighbourhood : 1.222947e -136
+5. Avg Availability - Room type : P_value = 0.0
+
+Best Investment:
+Based on three criteria 
+  - Weighted Annual Income
+  - Booking rate
+  - Occupancy rate
+
+![image](https://user-images.githubusercontent.com/106895118/175217061-239d11f7-8984-4e80-8b35-be759f5a49b6.png)
+
+Final Location Recommendation:
+![image](https://user-images.githubusercontent.com/106895118/175217199-c0a4f615-91ce-4158-aad6-12c684507bfd.png)
+
+Ideally, the best location in terms of price for almost every type of room is Manhattan, the most popular type is Hotel Rooms. Hence for real estate investors, we would recommend investing in Hotel Rooms in the neighborhoods of Manhattan, Brooklyn, or Queens depending on the amount of money they are willing to invest and their vision.
 
 
 
-# Sample Visualizations:
+## Sample Visualizations:
 Correlation between each variable:
 ![image](https://user-images.githubusercontent.com/106895118/174951503-fc834838-abb5-44cd-bd77-8092c5368b08.png)
 
