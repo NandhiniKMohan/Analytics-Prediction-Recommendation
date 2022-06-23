@@ -1,5 +1,8 @@
 # Data-Science-Analytics
 ## Price Prediction & Location Recommendation - Airbnb dataset
+
+### Python, ANOVA, Regression, Hypothesis Testing
+
 Predicts the price of Airbnb property, and finds the best location to gain maximum profit - Airbnb
 
 Business Problem and Background:
